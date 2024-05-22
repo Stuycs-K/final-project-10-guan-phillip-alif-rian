@@ -11,7 +11,7 @@ Started research on the Hill Cipher. Learning how it works, and thinking about w
 info
 
 
-## GROUP MEMBER 2
+## Rian Alif
 
 ### date x
 
