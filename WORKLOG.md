@@ -1,10 +1,10 @@
 # Work Log
 
-## GROUP MEMBER 1
+## Phillip Guan
 
-### date x
+### 5/22/23
 
-info
+Started research on the Hill Cipher. Learning how it works, and thinking about ways to implement it. 
 
 ### date y
 
