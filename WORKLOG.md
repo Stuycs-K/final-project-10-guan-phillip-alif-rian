@@ -13,9 +13,9 @@ info
 
 ## Rian Alif
 
-### date x
+### 05/22/24
 
-info
+Looked around few websites to learn about how the encryption and decryption works for Hill Cipher. 
 
 ### date y
 
