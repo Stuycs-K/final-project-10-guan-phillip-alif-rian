@@ -4,8 +4,11 @@ void setup() {
   size(1200,600);
   String text = "hi";
   String keyText = "help";
-  print(Arrays.toString(letterToNumber(text)));
+  int[] Ttext = letterToNumber(text);
+  int[][] TkeyText = getkey(keyText, text);
+  println(Arrays.toString(letterToNumber(text)));
   println(Arrays.deepToString((getkey(keyText, text))));
+  println(encode(Ttext, TkeyText));
 }
 
 int[] letterToNumber(String text) {
@@ -34,7 +37,9 @@ String encode(int[] textMatrix, int[][] keyMatrix) {
   String result = "";
   int[] preResult = new int[textMatrix.length];
   for (int i = 0; i < textMatrix.length; i++) {
+    println("TextMatrix length: " + textMatrix.length);
     for (int j = 0; j < keyMatrix[i].length; j++) {
+      println("KeyMatrix length: " + keyMatrix[i].length);
        preResult[j] = (keyMatrix[i][j] * textMatrix[i+j]) % 26;
     }
   }
