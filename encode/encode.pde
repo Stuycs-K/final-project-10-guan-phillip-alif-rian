@@ -29,3 +29,17 @@ int[][] getkey(String keyText, String text) {
   }
   return result;
 }
+
+String encode(int[] textMatrix, int[][] keyMatrix) {
+  String result = "";
+  int[] preResult = new int[textMatrix.length];
+  for (int i = 0; i < textMatrix.length; i++) {
+    for (int j = 0; j < keyMatrix[i].length; j++) {
+       preResult[j] = (keyMatrix[i][j] * textMatrix[i+j]) % 26;
+    }
+  }
+  for (int k = 0; k < preResult.length; k++) {
+    result = result + (char)(preResult[k] + 65);
+  }
+  return result;
+}
