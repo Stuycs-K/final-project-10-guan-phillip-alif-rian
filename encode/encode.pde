@@ -2,13 +2,13 @@ import java.util.*;
 
 void setup() {
   size(1200,600);
-  String text = "hi";
+  String text = "he";
   String keyText = "help";
   int[] Ttext = letterToNumber(text);
-  int[][] TkeyText = getkey(keyText, text);
-  println(Arrays.toString(letterToNumber(text)));
-  println(Arrays.deepToString((getkey(keyText, text))));
-  println(encode(Ttext, TkeyText));
+  int[][] TkeyText = {{3,3},{2,5}};//getkey(keyText, text);
+//  println(Arrays.toString(letterToNumber(text)));
+ // println(Arrays.deepToString((getkey(keyText, text))));
+  println(encrypt(Ttext, TkeyText));
 }
 
 int[] letterToNumber(String text) {
@@ -33,15 +33,16 @@ int[][] getkey(String keyText, String text) {
   return result;
 }
 
-String encode(int[] textMatrix, int[][] keyMatrix) {
+String encrypt(int[] textMatrix, int[][] keyMatrix) {
   String result = "";
   int[] preResult = new int[textMatrix.length];
   for (int i = 0; i < textMatrix.length; i++) {
     println("TextMatrix length: " + textMatrix.length);
-    for (int j = 0; j < keyMatrix[i].length; j++) {
-      println("KeyMatrix length: " + keyMatrix[i].length);
-       preResult[j] = (keyMatrix[i][j] * textMatrix[i+j]) % 26;
-    }
+    //for (int j = 0; j < keyMatrix[i].length; j++) {
+      //println("KeyMatrix length: " + keyMatrix[i].length);
+       /// FOUND THE ERROR: I need to add them and then mod 26, right now, it will replace its number in the result an dgo out of bounds
+       preResult[i] = ((keyMatrix[i][0]) + (keyMatrix[i][0] * textMatrix[i]) )% 26;
+    //}
   }
   for (int k = 0; k < preResult.length; k++) {
     result = result + (char)(preResult[k] + 65);
