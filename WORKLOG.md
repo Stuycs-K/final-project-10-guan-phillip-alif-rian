@@ -43,3 +43,5 @@ Me and Phillip started the encode together so that when I do the decode, it foll
 ### 05/29/24
 
 I worked on decode and finished the basic model for a Hill Cipher. I created the methods decodeK() and gridToMessage(). decodeK() takes the encrypted matrix and the key matrix and then decodes it into ASCII and gridToMessage() takes the ASCII values and returns a String. So, far basic is done, now we need to improve it and dd the image aspect of the project.
+
+### 05/30/24
