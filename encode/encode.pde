@@ -39,10 +39,10 @@ String encrypt(int[] textMatrix, int[][] keyMatrix) {
   int kIndex = 0;
   int kIndex0 = 0;
   
-  for (int i = 0; i < grid.length; i++){
+  for (int i = 0; i < textMatrix.length; i+=2){
      if (kIndex == 2) kIndex = 0;
-    for (int j = 0; j < grid[i].length; j++){
-      Final[i][j] = ((keyMatrix[kIndex][kIndex0] * grid[i][kIndex0]) + (keyMatrix[kIndex][kIndex0+1]* grid[i][kIndex0+1])) % 26;
+    for (int j = 0; j < textMatrix.length; j++){
+      result += (char)((keyMatrix[kIndex][kIndex0] * textMatrix[i]) + (keyMatrix[kIndex][kIndex0+1]* textMatrix[i+1])) % 26;
     //  println(Final[i][j]);
       kIndex++;
     }
