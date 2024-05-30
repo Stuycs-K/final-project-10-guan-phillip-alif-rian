@@ -28,7 +28,6 @@ Created a encrypt method. This method would give the resulting matrix from the m
 
 Looked around few websites to learn about how the encryption and decryption works for Hill Cipher.
 
-
 ### 05/23/24
 
 We learned more about using branches in github. Also, fixed our branch issues.
@@ -36,3 +35,11 @@ We learned more about using branches in github. Also, fixed our branch issues.
 ### 05/24/24
 
 Wasn't in class but at home I looked at the Decryption part of the Hill Cipher and planned how I would approach the coding aspect of it.
+
+### 05/28/24
+
+Me and Phillip started the encode together so that when I do the decode, it follows the same rule and has the basic format. 
+
+### 05/29/24
+
+I worked on decode and finished the basic model for a Hill Cipher. I created the methods decodeK() and gridToMessage(). decodeK() takes the encrypted matrix and the key matrix and then decodes it into ASCII and gridToMessage() takes the ASCII values and returns a String. So, far basic is done, now we need to improve it and dd the image aspect of the project.
