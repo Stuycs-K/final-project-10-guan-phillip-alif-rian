@@ -49,6 +49,12 @@ int[][] encrypt(int[][] text, int[][] keyText) {
   }
   return encryptedText;
 }
+
+String hillCipher([]int text, int[][] keyText){
+  for (int i = 0; i < text.length; i++) {
+    
+  }
+}
 /*  
   int kIndex = 0;
   int kIndex0 = 0;
