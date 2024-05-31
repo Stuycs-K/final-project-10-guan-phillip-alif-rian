@@ -20,7 +20,11 @@ Started the encryption process. Created two methods. One method called "letterTo
 
 ### 5/29/24
 
-Created a encrypt method. This method would give the resulting matrix from the matrix multiplication from the text and key. While working, there was an error with the output, and I figured out the problem, but haven't figured out a solution to it yet. 
+Created a encrypt method. This method would give the resulting matrix from the matrix multiplication from the text and key. While working, there was an error with the output, and I figured out the problem, but haven't figured out a solution to it yet.
+
+### 5/30/24
+
+Fixed encrypt method. Now investigating how to incorporate images into our project. Will maybe hide the key or encrypted message in the image. 
 
 ## Rian Alif
 
@@ -38,7 +42,7 @@ Wasn't in class but at home I looked at the Decryption part of the Hill Cipher a
 
 ### 05/28/24
 
-Me and Phillip started the encode together so that when I do the decode, it follows the same rule and has the basic format. 
+Me and Phillip started the encode together so that when I do the decode, it follows the same rule and has the basic format.
 
 ### 05/29/24
 
