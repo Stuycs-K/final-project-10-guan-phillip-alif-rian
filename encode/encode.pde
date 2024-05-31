@@ -52,7 +52,9 @@ int[][] encrypt(int[][] text, int[][] keyText) {
 
 String hillCipher([]int text, int[][] keyText){
   for (int i = 0; i < text.length; i++) {
-    
+    for (int j = 0; j < keyText[i].length) {
+      //do the thing here find the sequesnces of hte ntoes.
+    }
   }
 }
 /*  
