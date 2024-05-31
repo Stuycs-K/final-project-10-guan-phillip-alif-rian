@@ -4,11 +4,11 @@ void setup() {
   //size(1200,600);
   String text = "he";
   String keyText = "help";
-  int[] Ttext = letterToNumber(text);
+  int[][] Ttext = {{7, 4},{11, 15}};
   int[][] TkeyText = {{3,3},{2,5}};//getkey(keyText, text);
   println(Arrays.toString(letterToNumber(text)));
   println(Arrays.deepToString((getkey(keyText, text))));
-  println(encrypt(Ttext, TkeyText));
+  println(Arrays.deepToString(encrypt(Ttext, TkeyText)));
 }
 
 int[] letterToNumber(String text) {
@@ -33,9 +33,23 @@ int[][] getkey(String keyText, String text) {
   return result;
 }
 
-String encrypt(int[] textMatrix, int[][] keyMatrix) {
-  String result = "";
-  
+int[][] encrypt(int[][] text, int[][] keyText) {
+  int textLength = text.length;
+  int[][] encryptedText = new int[textLength][textLength];
+
+  // Matrix multiplication
+  for (int i = 0; i < textLength; i++) {
+    for (int j = 0; j < textLength; j++) {
+      encryptedText[i][j] = 0;
+      for (int k = 0; k < textLength; k++) {
+        encryptedText[i][j] += text[i][k] * keyText[k][j];
+      }
+      encryptedText[i][j] %= 26;
+    }
+  }
+  return encryptedText;
+}
+/*  
   int kIndex = 0;
   int kIndex0 = 0;
   
@@ -46,7 +60,7 @@ String encrypt(int[] textMatrix, int[][] keyMatrix) {
     //  println(Final[i][j]);
       kIndex++;
     }
-  }
+  } */
 
   /*
   int[] preResult = new int[textMatrix.length];
@@ -63,5 +77,3 @@ String encrypt(int[] textMatrix, int[][] keyMatrix) {
   }
   
   */
-  return result;
-}
