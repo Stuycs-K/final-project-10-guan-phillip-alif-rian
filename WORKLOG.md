@@ -26,6 +26,10 @@ Created a encrypt method. This method would give the resulting matrix from the m
 
 Fixed encrypt method. Now investigating how to incorporate images into our project. Will maybe hide the key or encrypted message in the image. 
 
+### 5/31/24
+
+Started one last method for the encoding process. It is the hillCipher method, which will actually do the cipher, using all the components we made before.
+
 ## Rian Alif
 
 ### 05/22/24
