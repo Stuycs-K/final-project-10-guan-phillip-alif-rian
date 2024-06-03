@@ -2,27 +2,33 @@ import java.util.*;
 
 void setup() {
   //size(1200,600);
-  String text = "he";
+  String text = "help";
   String keyText = "help";
-  int[][] Ttext = {{7, 4},{11, 15}};
+  int[][] Ttext = letterToNumber(text);
   int[][] TkeyText = {{3,3},{2,5}};//getkey(keyText, text);
-  println(Arrays.toString(letterToNumber(text)));
-  println(Arrays.deepToString((getkey(keyText, text))));
+  //println(Arrays.deepToString(letterToNumber(text)));
+  //println(Arrays.deepToString((getkey(keyText, text))));
   println(Arrays.deepToString(encrypt(Ttext, TkeyText)));
 }
 
-int[] letterToNumber(String text) {
-  int[] result = new int[text.length()];
+int[][] letterToNumber(String text) {
+  int[][] result = new int[text.length()/2][2];
+  int index = 0; 
+  
   String newText = text.toUpperCase();
-  for (int i = 0; i < newText.length(); i++) {
-    result[i] = newText.charAt(i) % 65;
+  for (int i = 0; i < newText.length()/2; i++) {
+    for (int j = 0; j < 2; j++){
+      result[i][j] = newText.charAt(index++) % 65;
+    }
   }
   return result;
 }
 
+/*
+
 int[][] getkey(String keyText, String text) {
   int[][] result = new int[text.length()][text.length()];
-  int[] track = letterToNumber(keyText);
+  int[][] track = letterToNumber(keyText);
   int counter = 0;
   for (int i = 0; i < result.length; i++) {
     for (int j = 0; j < result[i].length; j++) {
@@ -32,12 +38,12 @@ int[][] getkey(String keyText, String text) {
   }
   return result;
 }
-
+*/
 int[][] encrypt(int[][] text, int[][] keyText) {
-  int textLength = text.length;
+ /* int textLength = text.length;
   int[][] encryptedText = new int[textLength][textLength];
 
-  // Matrix multiplication
+  //Matrix multiplication
   for (int i = 0; i < textLength; i++) {
     for (int j = 0; j < textLength; j++) {
       encryptedText[i][j] = 0;
@@ -48,15 +54,28 @@ int[][] encrypt(int[][] text, int[][] keyText) {
     }
   }
   return encryptedText;
-}
+  */
+  
+  
+  int[][] encryptedText = new int[text.length][text[0].length];
 
-String hillCipher([]int text, int[][] keyText){
-  for (int i = 0; i < text.length; i++) {
-    for (int j = 0; j < keyText[i].length) {
-      //do the thing here find the sequesnces of hte ntoes.
+  int kIndex = 0;
+  int kIndex0 = 0;
+  
+  for (int i = 0; i < text.length; i++){
+     if (kIndex == 2) {
+       kIndex = 0;
+     }
+    for (int j = 0; j < text[i].length; j++){
+      encryptedText[i][j] = ((keyText[kIndex][kIndex0] * text[i][kIndex0]) + (keyText[kIndex][kIndex0+1]* text[i][kIndex0+1])) % 26;
+    //  println(Final[i][j]);
+      kIndex++;
     }
   }
+  return encryptedText;
+  
 }
+
 /*  
   int kIndex = 0;
   int kIndex0 = 0;
