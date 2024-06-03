@@ -1,7 +1,7 @@
 import java.util.*;
 
 void setup(){
-   size(1200, 600);
+ //  size(1200, 600);
    
    int[][] xKey = new int[2][2];
    xKey[0][0] = 3;
