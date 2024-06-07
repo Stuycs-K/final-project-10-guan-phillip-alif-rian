@@ -24,11 +24,23 @@ Created a encrypt method. This method would give the resulting matrix from the m
 
 ### 5/30/24
 
-Fixed encrypt method. Now investigating how to incorporate images into our project. Will maybe hide the key or encrypted message in the image. 
+Fixed encrypt method. Now investigating how to incorporate images into our project. Will maybe hide the key or encrypted message in the image.
 
 ### 5/31/24
 
 Started one last method for the encoding process. It is the hillCipher method, which will actually do the cipher, using all the components we made before.
+
+### 6/1 - 6/2
+
+Started planning how the presentation should look like.
+
+### 6/3/24
+
+Completed the encoding process with Rian in class. Talked through most of the process and finally got it working. Started discussing more in depth what we want to do with images.
+
+### 6/5/24
+
+Created some slides for the presentation. Trying to figure out the timing. Have to start coordinating with the other hill cipher group.
 
 ## Rian Alif
 
