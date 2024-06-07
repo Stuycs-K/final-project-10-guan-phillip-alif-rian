@@ -1,7 +1,10 @@
 import java.util.*;
 
-void setup(){
- //  size(1200, 600);
+void setup(){ 
+ size(800, 800);
+ 
+ PImage img = loadImage("hacker.jpg");
+
    
    int[][] xKey = new int[2][2];
    xKey[0][0] = 3;
@@ -19,7 +22,7 @@ void setup(){
   // println(Arrays.deepToString(decodeK(grid, xKey)));
   print(gridToMessage(decodeK(grid, xKey)));
    
-
+  image(img, 0, 0);
 }
 
 int[][] decodeK(int[][] grid, int[][] k){
