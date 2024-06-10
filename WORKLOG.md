@@ -65,3 +65,22 @@ Me and Phillip started the encode together so that when I do the decode, it foll
 I worked on decode and finished the basic model for a Hill Cipher. I created the methods decodeK() and gridToMessage(). decodeK() takes the encrypted matrix and the key matrix and then decodes it into ASCII and gridToMessage() takes the ASCII values and returns a String. So, far basic is done, now we need to improve it and dd the image aspect of the project.
 
 ### 05/30/24
+I helped Phillip on figuring out the encode file. He was having a bit of a hard time with his model, so I recommended him to try getting inspiration from my decode.
+
+### 5/31/24
+Worked on figuring out how we will integrate the image. We didn't want something basic or something too complicated. I thought why not find the pixels that has binary value of red and green ending is "00" and change the last two digits of the pixel value with the two nunmber values of the cipher text.
+
+### 6/1/24 - 6/2/24
+I was working on the code and trying to make it work. A lot of testing and debuging. 
+
+### 6/3/24
+I have trid my best but now realized that I cannot integrate the image the way I planned earlier. I was working on both the encode and decode to integrate it, just to find out that changing the pixels value (even such a small number) seriously effects the image.
+
+### 6/5/24
+We looked back at our old labs and took inspiration. We decided that the image would take the ciper text numbers in binary value and store it similar to a Linear mode. This was much more workoable. 
+
+### 6/7/24
+I worked on the code. 
+
+### 6/8/24 - 6/9/24
+Looked over everything and finished all the bugs. Practiced and revised the presentation. Also, had some issues with merging the branch, so had to fix it. 
