@@ -42,6 +42,14 @@ Completed the encoding process with Rian in class. Talked through most of the pr
 
 Created some slides for the presentation. Trying to figure out the timing. Have to start coordinating with the other hill cipher group.
 
+### 6/7/24
+
+Fixed up some errors on encode, discussed how to split up the work between us and the other group doing the hill cipher. Began our image stuff for the project.
+
+### 6/8 - 6/9
+
+Finished up the project. Created the presentation.md. Recorded the presentation. Finished up readme. 
+
 ## Rian Alif
 
 ### 05/22/24
