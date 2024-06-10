@@ -30,15 +30,15 @@
 
 ## Encryption Process
 1. Key Selection
-  - choose a (N x N) invertible matrix as the key
-  - the numbers in this matrix should be integer values between 0-25
+    - choose a (N x N) invertible matrix as the key
+    - the numbers in this matrix should be integer values between 0-25
 
 2. Changing the plaintext
-  - Divide the plaintext into blocks of "n" letters each. If final block is incomplete, pad it with an extra letter.
-  - Convert the letters to numbers with "A = 0", "B = 1", and so on until "Z = 25"
-  - Form each block of letters into a column vector.
+    - Divide the plaintext into blocks of "n" letters each. If final block is incomplete, pad it with an extra letter.
+    - Convert the letters to numbers with "A = 0", "B = 1", and so on until "Z = 25"
+    - Form each block of letters into a column vector.
 
 3. Matrix multiplication
-  - Multiply Key Matrix with Plaintext Matrix
-  - Mod each number of the resulting matrix by 26
-  - Convert those numbers back to letters based on the pairings of values (A = 0, B = 1, etc)
+    - Multiply Key Matrix with Plaintext Matrix
+    - Mod each number of the resulting matrix by 26
+    - Convert those numbers back to letters based on the pairings of values (A = 0, B = 1, etc)
