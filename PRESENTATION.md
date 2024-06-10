@@ -46,4 +46,11 @@
 <img src="multiply.png" alt="Matrix Multiplication Example2" class="center">
 
 # Demo of our Hill Cipher
-- WATCH DEMO!!!
+- Methods:
+  - letterToNumber
+  - encrypt
+  - messageToEncode
+  - message 
+  - uploadCipher
+  - grid
+  - gridToMessage
