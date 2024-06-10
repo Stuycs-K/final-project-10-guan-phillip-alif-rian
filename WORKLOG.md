@@ -48,7 +48,7 @@ Fixed up some errors on encode, discussed how to split up the work between us an
 
 ### 6/8 - 6/9
 
-Finished up the project. Created the presentation.md. Recorded the presentation. Finished up readme. 
+Finished up the project. Created the presentation.md. Recorded the presentation. Finished up readme.
 
 ## Rian Alif
 
@@ -85,10 +85,16 @@ I was working on the code and trying to make it work. A lot of testing and debug
 I have trid my best but now realized that I cannot integrate the image the way I planned earlier. I was working on both the encode and decode to integrate it, just to find out that changing the pixels value (even such a small number) seriously effects the image.
 
 ### 6/5/24
-We looked back at our old labs and took inspiration. We decided that the image would take the ciper text numbers in binary value and store it similar to a Linear mode. This was much more workoable. 
+We looked back at our old labs and took inspiration. We decided that the image would take the ciper text numbers in binary value and store it similar to a Linear mode. This was much more workoable.
 
 ### 6/7/24
-I worked on the code. 
+I worked on the code.
 
 ### 6/8/24 - 6/9/24
-Looked over everything and finished all the bugs. Practiced and revised the presentation. Also, had some issues with merging the branch, so had to fix it. 
+Looked over everything and finished all the bugs. Practiced and revised the presentation. Also, had some issues with merging the branch, so had to fix it.
+
+
+## REFERENCES WE USED
+- https://en.wikipedia.org/wiki/Hill_cipher
+- https://www.geeksforgeeks.org/hill-cipher/
+- https://www.youtube.com/watch?v=-EQ8UomTrAQ
