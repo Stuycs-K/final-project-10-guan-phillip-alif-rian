@@ -37,9 +37,9 @@
     - Divide the plaintext into blocks of "n" letters each. If final block is incomplete, pad it with an extra letter.
     - Convert the letters to numbers with "A = 0", "B = 1", and so on until "Z = 25"
     - Form each block of letters into a column vector.
-<img src="matrixMultiplication.png" alt="Matrix Multiplication Example">
 
 3. Matrix multiplication
     - Multiply Key Matrix with Plaintext Matrix
+    <img src="matrixMultiplication.png" alt="Matrix Multiplication Example">
     - Mod each number of the resulting matrix by 26
     - Convert those numbers back to letters based on the pairings of values (A = 0, B = 1, etc)
